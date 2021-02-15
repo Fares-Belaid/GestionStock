@@ -10,11 +10,13 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -32,7 +34,7 @@ public class CommandeClient extends AbstractEntity {
 	@JoinColumn(name = "idclient")
 	private Client client;
 	
-	@OneToMany(mappedBy = "commandeclient")
+	@OneToMany(mappedBy = "commandeclients")
 	private List<LigneCommandeClient> ligneCommandeClient;
 	
 	
