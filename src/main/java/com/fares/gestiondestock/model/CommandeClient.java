@@ -16,7 +16,6 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
@@ -34,7 +33,7 @@ public class CommandeClient extends AbstractEntity {
 	@JoinColumn(name = "idclient")
 	private Client client;
 	
-	@OneToMany(mappedBy = "commandeclients")
+	@OneToMany(mappedBy = "commandeclient")
 	private List<LigneCommandeClient> ligneCommandeClient;
 	
 	

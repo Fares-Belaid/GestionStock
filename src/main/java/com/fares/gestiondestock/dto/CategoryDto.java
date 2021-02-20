@@ -16,11 +16,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
-@Builder
+@Builder					// yasna3 des objets de type ela nheb 3lih (exp lena de type CategoryDto)
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
+
 public class CategoryDto {
 
 
@@ -28,7 +27,6 @@ public class CategoryDto {
 
 	private String codeCategory;
 	
-
 	private String designation;
 	
 	@JsonIgnore
@@ -36,7 +34,7 @@ public class CategoryDto {
 	
 
 	
-	public CategoryDto fromEntity(Category category) {
+	public static CategoryDto fromEntity(Category category) {
 		if(category == null) {
 			return null;
 			//TODO throw an Exception 
@@ -51,16 +49,17 @@ public class CategoryDto {
 	}
 	
 	
-	public Category toEntity(CategoryDto categoryDto) {
+	public static Category toEntity(CategoryDto categoryDto) {
 		if(categoryDto == null) {
 			return null;
 			//TODO throw an Exception 
 			
 		}
 	
-		return Category.builder()
-				.codeCategory(categoryDto.getCodeCategory())
-				.designation(categoryDto.getDesignation())
-				.build();
+		Category category = new Category();
+		category.setId(categoryDto.getId());
+		category.setCodeCategory(categoryDto.getCodeCategory());
+		category.setDesignation(categoryDto.getDesignation());
+		return category;
 	}
 }
