@@ -8,14 +8,19 @@ import com.fares.gestiondestock.model.Article;
 import com.fares.gestiondestock.model.Category;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Data
 @Builder
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
 public class CategoryDto {
 
 
@@ -26,7 +31,6 @@ public class CategoryDto {
 
 	private String designation;
 	
-
 	@JsonIgnore
 	private List<ArticleDto> articles ;
 	
@@ -41,7 +45,7 @@ public class CategoryDto {
 	
 		return CategoryDto.builder()
 				.id(category.getId())
-				.code(category.getCode())
+				.codeCategory(category.getCodeCategory())
 				.designation(category.getDesignation())
 				.build();
 	}
@@ -55,7 +59,7 @@ public class CategoryDto {
 		}
 	
 		return Category.builder()
-				.code(categoryDto.getCode())
+				.codeCategory(categoryDto.getCodeCategory())
 				.designation(categoryDto.getDesignation())
 				.build();
 	}

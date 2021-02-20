@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@EqualsAndHashCode(callSuper = true)
+@EqualsAndHashCode
 @Embeddable						// ma3neha champs composé tnajem testa3mlou f barcha classet
 public class Adresse {
 
