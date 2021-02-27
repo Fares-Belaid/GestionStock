@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.util.StringUtils;
 
-import com.fares.gestiondestock.dto.CategoryDto;
 import com.fares.gestiondestock.dto.UtilisateurDto;
 
 public class UtilsateurValidator {
