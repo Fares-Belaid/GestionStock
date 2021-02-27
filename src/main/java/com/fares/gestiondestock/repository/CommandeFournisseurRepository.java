@@ -2,6 +2,8 @@ package com.fares.gestiondestock.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CommandeFournisseurRepository extends JpaRepository<CommandeFournisseurRepository, Integer> {
+import com.fares.gestiondestock.model.CommandeFournisseur;
+
+public interface CommandeFournisseurRepository extends JpaRepository<CommandeFournisseur, Integer> {
 
 }
