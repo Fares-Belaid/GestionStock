@@ -15,5 +15,7 @@ public class LigneVenteDto {
 
 	private VentesDto vente;
 	
+	private Integer idEntrprise;
+
 	private BigDecimal quantite;
 }

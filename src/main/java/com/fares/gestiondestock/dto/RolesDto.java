@@ -12,6 +12,8 @@ public class RolesDto {
 	private Integer id;
 
 	private String roleName;
+	
+	private Integer idEntrprise;
 
 	private UtilisateurDto utilisateur;
 

@@ -27,6 +27,8 @@ public class UtilisateurDto {
 
 	private AdresseDto adresse;
 	
+	private Integer idEntrprise;
+	
 	private String photo;
 	
 	private EntrepriseDto entreprise;

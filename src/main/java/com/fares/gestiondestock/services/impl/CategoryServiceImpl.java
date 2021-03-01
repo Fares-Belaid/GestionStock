@@ -8,12 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
-import com.fares.gestiondestock.dto.ArticleDto;
 import com.fares.gestiondestock.dto.CategoryDto;
 import com.fares.gestiondestock.exception.EntityNotFoundException;
 import com.fares.gestiondestock.exception.ErrorCodes;
 import com.fares.gestiondestock.exception.InvalidEntityException;
-import com.fares.gestiondestock.model.Article;
 import com.fares.gestiondestock.model.Category;
 import com.fares.gestiondestock.repository.CategoryRepository;
 import com.fares.gestiondestock.services.CategoryService;

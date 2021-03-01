@@ -24,6 +24,8 @@ public class AdresseDto {
 	
 	private String pays ;
 	
+	private Integer idEntrprise;
+
 	
 	public static AdresseDto fromEntity(Adresse adresse) {
 		if (adresse == null) {

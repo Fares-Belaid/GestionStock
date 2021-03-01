@@ -16,6 +16,7 @@ public class VentesDto {
 
 	private Instant dateVente;
 	
+	private Integer idEntrprise;
 
 	private String commentaire;
 	

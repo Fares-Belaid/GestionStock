@@ -26,6 +26,8 @@ public class FournisseurDto {
 	
 	private String numTel ;
 	
+	private Integer idEntrprise;
+
 
 	private List<CommandeFournisseurDto> commandeFournisseur;
 }

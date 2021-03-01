@@ -18,7 +18,8 @@ public class CommandeFournisseurDto {
 	private String code;
 	
 	private Instant dateCommande;
-	
+
+	private Integer idEntrprise;
 
 	private FournisseurDto fournisseur;
 	

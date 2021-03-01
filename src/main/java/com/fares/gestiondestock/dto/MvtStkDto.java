@@ -9,5 +9,7 @@ public class MvtStkDto {
 
 	private Integer id;
 
+	private Integer idEntrprise;
+
 	private ArticleDto article;
 }

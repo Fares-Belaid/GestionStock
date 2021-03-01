@@ -23,7 +23,9 @@ public class ClientDto {
 	private String photo ;
 	
 	private String email ;
-	
+
+	private Integer idEntrprise;
+
 	private String numTel ;
 	@JsonIgnore
 	private List<CommandeClientDto> commandeClients;

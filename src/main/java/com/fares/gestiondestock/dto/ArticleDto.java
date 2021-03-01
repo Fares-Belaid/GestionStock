@@ -37,6 +37,9 @@ public class ArticleDto {
 	private String photo;
 
 	private CategoryDto category ;
+
+	private Integer idEntrprise;
+
 	
 	public static ArticleDto fromEntity(Article article) {
 		if (article == null) {
